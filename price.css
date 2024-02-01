@@ -1,0 +1,76 @@
+div {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+a {
+    text-decoration: none;
+    text-decoration-line: underline;
+    color: black;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: rgba(114, 162, 252, 0.205);
+    padding: 30px;
+}
+
+p {
+    font-size: larger;
+}
+
+#price {
+    background-color: rgba(102, 123, 163, 0.466);
+    font-weight: bolder;
+    width: 90px;
+    height: 30px;
+    font-size: 115%;
+    color: rgba(0, 41, 116, 0.733);
+    border: 0px;
+}
+
+select {
+    height: 30px;
+    width: 40px;
+    font-size: 20px;
+    margin-left: 10px;
+    background-color: rgba(168, 199, 255, 0.466);
+    border: 1px solid rgba(89, 147, 255, 0.856);
+    border-radius: 10px;
+}
+
+#sum-all-bg {
+    background-color: rgba(0, 0, 0, 0.26);
+    font-size: 20px;
+    max-width: fit-content;
+    padding: 30px;
+}
+
+#pop-up {
+    height: 200px;
+    width: 300px;
+    background-color: rgba(177, 0, 0, 0.849);
+    border: 2px solid #000;
+    border-radius: 30px;
+    position: fixed;
+    left: auto;
+    top: 10%;
+    padding: 20px;
+    text-align: end;
+    display: none;
+}
+
+#close {
+    font-size: 30px;
+    text-align: end;
+    cursor: pointer;
+}
+
+.warning {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}

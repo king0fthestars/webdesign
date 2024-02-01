@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="price.js"></script>
+    <link rel="stylesheet" href="price.css">
+    <title>WYCENA</title>
+</head>
+<body>
+<div id="pop-up">
+    <span id="close" onclick="closePopUp()">&times;</span>
+    <h2 class="warning">UWAGA</h2>
+    <p class="warning">Kalkulator jest tylko narzędziem poglądowym! Ostateczna cena ustalana jest indywidualnie.</p>
+</div>
+<h1>WYCENA</h1>
+    <div>
+        <p>Utworzenie low-fi projektu strony/aplikacji - 40PLN/h (1h - jeden widok)</p>
+        <p>Wybierz ile widoków ma mieć strona/aplikacja:</p>
+        <select id="low-fi">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+        <div id="low-fi-sum"></div>
+        <p>Jeśli potrzebujesz bardziej rozbudowanej strony należy skontaktować się bezpośrednio przez formularz na dole <a href="index.html">strony głównej</a>.</p>
+    </div>
+
+    <div>
+        <p>Utworzenie high-fi projektu strony/aplikacji - 50PLN/h (2h - jeden widok)</p>
+        <div id="high-fi"></div>
+        <p>Utworzenie czystego layoutu strony/aplikacji - 70PLN/h (2h - jeden widok)</p>
+        <div id="frontend"></div>
+        <p>Dodanie do strony animacji - 70PLN za jeden ulepszony widok</p>
+        <select id="animations"></select>
+        <div id="animations-sum"></div>
+        <p>Utworzenie i podłączenie bazy danych - 60PLN/h (cena zależna od ilości danych)</p>
+        <p>Wystawienie strony (hosting) 200PLN + dodatkowa opłata miesięczna ustalana na sam koniec</p>
+        <p>Chcesz, żebyśmy zajęli się hostingiem? </p>
+        <p>Zaznacz<input type="checkbox" id="hosting" onchange="hostingCheck()"></p>
+        <div id="hosting-sum"></div>
+        <p>Administracja strony - 600PLN/miesiąc + opłaty za wprowadzanie zmian innych niż są określone w umowie</p>
+        <p>(UMOWA NA 6 MIESIĘCY)</p>
+        <p>Chcesz, żebyśmy zajęli się administracją strony? </p>
+        <p>Zaznacz<input type="checkbox" id="admin" onchange="adminCheck()"></p>
+        <div id="admin-sum"></div>
+        <button id="price" onclick="sumAllPrice()">Podlicz</button>
+
+        <h2>PODSUMOWANIE</h2>
+        <div id="sum-all"></div>
+        <p><a href="index.html">Wróć do strony głównej</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+#notes-container {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.bottom-right-notes {
+    height: 100%;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.notes {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.old-notes {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+@media screen and (max-width:1200px) {
+    #notes-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottom-right-notes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 520px;
+    }
+}
+
+#my-notes {
+    width: 100%;
+}
+
+textarea {
+    width: 200px;
+    height: 215px;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: rgb(94, 88, 81);
+    font-weight: 600;
+    background-color: rgba(250, 228, 138, 0.705);
+    border: solid rgb(167, 161, 155) 1px;
+}
+  
+button {
+    background-color: #ffa033c0;
+    width: 120px;
+    color: rgb(99, 95, 91);
+    border: none;
+    padding: 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.note {
+    display: flex;
+    flex-direction: column;
+}
+
+.notes-card {
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    margin-left: 10px;
+    color: rgb(94, 88, 81);
+    font-weight: 600;
+    background-color: rgba(250, 228, 138, 0.705);
+    border: solid rgb(167, 161, 155) 1px;
+    padding: 10px;
+}

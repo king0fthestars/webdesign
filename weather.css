@@ -1,0 +1,10 @@
+.bt-weather {
+    margin: 5px;
+}
+.weather-text {
+    font-weight: bold;
+}
+.bottom-right-weather {
+    padding: 30px;
+    background-color: #fff;
+}

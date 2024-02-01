@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script defer src="weather.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="notes.css">
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <container class="main">
+        <div class="top">
+            <h1 id="top-cv"><a href="index.html">CV</a></h1>
+            <container>
+                <h1 id="top-projects">PRZYKŁADOWE PROJEKTY</h1>
+                <ul id="ul-projects">
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="weather.html">Check weather</a></li>
+                    <li><a href="ugabuga.html"></a></li>
+                </ul>
+            </container>
+            <h1 id="top-price"><a href="price.html">WYCENA</a></h1>
+        </div>
+        <div class="bottom">
+            <div class="bottom-left">
+                <h1 class="cv" id="my-name">Franek Łuczkowski</h1>
+                <h2 class="cv" id="career">Frontend Developer</h2>
+                <div class="info-div"><span class="material-symbols-outlined">
+                    call
+                    </span><h4 class="cv" id="phone">(+48) 784 509 023</h4></div>
+                <div class="info-div"><span class="material-symbols-outlined">
+                    mail
+                    </span><h4 class="cv" id="mail">franek.luczkowski@gmail.com</h4></div>
+                <div class="info-div"><span class="material-symbols-outlined">
+                    link
+                    </span><h4 class="cv" id="link"><a href="https://www.linkedin.com/in/franek-%C5%82uczkowski-4966922a3/">LinkedIn</a>, <a href="https://github.com/king0fthestars">GitHub</a></h4></div>
+                <h2 class="cv" id="competences">KOMPETENCJE</h2>
+                <h3 class="cv" id="hard">TWARDE<span class="material-symbols-outlined" id="expand-more">
+                    expand_more
+                    </span></h3>
+                    <ul id="hard-ul">
+                        <li class="hard-li">ReactJS<span class="material-symbols-outlined">
+                            radio_button_uncheckedradio_button_uncheckedradio_button_uncheckedradio_button_checkedradio_button_checked
+                            </span></li>
+                        <li class="hard-li">JavaScript<span class="material-symbols-outlined">
+                            radio_button_uncheckedradio_button_uncheckedradio_button_uncheckedradio_button_uncheckedradio_button_checked
+                        </span></li>
+                        <li class="hard-li">HTML<span class="material-symbols-outlined">
+                            radio_button_uncheckedradio_button_uncheckedradio_button_uncheckedradio_button_uncheckedradio_button_unchecked
+                        </span></li>
+                        <li class="hard-li">CSS<span class="material-symbols-outlined">
+                            radio_button_uncheckedradio_button_uncheckedradio_button_uncheckedradio_button_uncheckedradio_button_unchecked
+                        </span></li>
+                        <li class="hard-li">SQL<span class="material-symbols-outlined">
+                            radio_button_uncheckedradio_button_uncheckedradio_button_checkedradio_button_checkedradio_button_checked
+                        </span></li>
+                        <li class="hard-li">Python<span class="material-symbols-outlined">
+                            radio_button_uncheckedradio_button_uncheckedradio_button_checkedradio_button_checkedradio_button_checked
+                        </span></li>
+                        <li class="hard-li">C++<span class="material-symbols-outlined">
+                            radio_button_uncheckedradio_button_uncheckedradio_button_checkedradio_button_checkedradio_button_checked
+                        </span></li>
+                        <li class="hard-li">C#<span class="material-symbols-outlined">
+                            radio_button_uncheckedradio_button_checkedradio_button_checkedradio_button_checkedradio_button_checked
+                        </span></li>
+                    </ul>
+                <h3 class="cv" id="soft">MIĘKKIE<span class="material-symbols-outlined" id="expand-more">
+                    expand_more
+                    </span></h3>
+                    <h4 id="soft-text">Dobrze sobie radzę w pracy zespołowej, jestem osobą kreatywną z mnóstwem pomysłów. Praca pod presją czasu nie jest dla mnie problemem, dobrze sobie z tym radzę. Według mnie i osób, z którymi pracowałem jestem dobrym liderem w zespole. Łatwo też adaptuję się do zmian.</h4>
+                </div>
+            
+                <div class="bottom-right-weather" id="br-weather">
+                    <h1>Sprawdź pogodę w wybranym mieście</h1>
+                    <div class="buttons">
+                        <button class="bt-weather" id="poznan" onclick="getWeather(52.39, 17.00)">Poznań</button>
+                        <button class="bt-weather" id="wroclaw" onclick="getWeather(51.10, 17.03)">Wrocław</button>
+                        <button class="bt-weather" id="zakopane" onclick="getWeather(49.27, 19.99)">Zakopane</button>
+                        <button class="bt-weather" id="bialystok" onclick="getWeather(53.13, 23.15)">Białystok</button>
+                        <button class="bt-weather" id="kolobrzeg" onclick="getWeather(54.17, 15.57)">Kołobrzeg</button>
+                        <button class="bt-weather" id="warszawa" onclick="getWeather(52.23, 21.01)">Warszawa</button>
+                        <button class="bt-weather" id="gdansk" onclick="getWeather(54.37, 18.61)">Gdańsk</button>
+                    </div>
+                    <div id="weather-info"></div>
+                    <script src="weather.js"></script>
+                </div>
+                
+            </div>
+        </div>
+    </container>
+</body>
+</html>
