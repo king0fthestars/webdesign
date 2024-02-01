@@ -33,6 +33,7 @@ body {
 
 #top-projects {
     grid-column: 2;
+    text-align: center;
     cursor: pointer;
 }
 
@@ -348,11 +349,34 @@ h2 {
 
     .top {
         width: 100%;
-        height: 8%;
+        height: 80px;
         z-index: 9999;
         box-sizing: border-box;
         justify-items: center;
         align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        min-width: 200px;
+
+    }
+
+    #top-cv {
+        grid-column: 1;
+        cursor: pointer;
+        font-size: 25px;
+
+    }
+    
+    #top-projects {
+        grid-column: 2;
+        text-align: center;
+        cursor: pointer;
+        font-size: 25px;
+    }
+    
+    #top-price {
+        grid-column: 3;
+        cursor: pointer;
+        font-size: 25px;
     }
 
     .bottom {
